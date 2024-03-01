@@ -25,7 +25,7 @@ app.listen(port, () => {
 
 
 // Création d'un endpoint sendMessage pour recevoir les messages du frontend
-app.post('http://localhost:3000/nvmsg', async (req, res) => {
+app.post('/nvmsg', async (req, res) => {
     console.log('Corps de la requête: ', req.body);
     const userMessage = req.body.message;
     console.log('Message reçu : ', userMessage);
