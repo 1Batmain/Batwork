@@ -149,15 +149,10 @@
         margin-bottom: 10px;
     }
 
-    #messages{
-        height: auto;
-            background-color: #282828;
-            user-select:text;
-            pointer-events:all;
-    }
+
 
     .nvmessage{
-        height: auto;
+        height: min-content;
         background-color: #282828;
         user-select:text;
         pointer-events:all;
