@@ -57,17 +57,8 @@
     justify-content: space-evenly;
 
 }
-    .pied{
-        display: flex;
-        flex-direction: row;
-
-    }
-    a{
-        /* display: flex;
-        align-items: center; 
-        justify-content: center;  */
-
-    
+   
+    a{ 
         background: #1E1E1E;
 
         color: #969696;
@@ -96,9 +87,9 @@
         display: flex;
         flex-direction: column;
         max-width: 100%;
-        align-items:start;
+        align-items: center;
         justify-content: center;
-        text-align: start;
+        text-align:center;
 
     }
 
@@ -106,20 +97,21 @@
         height: auto;
         padding: 1em 1em 1em ;
         font-family:monospace;
-        font-size: 16px;
+        font-size: 20px;
         font-weight:bold;
         color:#FFF;
     }
 
     .texte{
         height: auto;
-        max-width: 75%;
-        padding: 1em 1em 5em ;
+        max-width: 95%;
+        padding: 1em 1em 2em ;
         font-family:monospace;
         color:#FFF;
         margin-left: 2dvh;
-
-
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2;
     }
 
     /* Style du chatbot */
@@ -128,8 +120,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 400px;
-        max-height: 50dvh;
+        width: 55dvi;
+        min-width: 20dvi;
+        max-height: 80dvh;
         margin: auto;
         border: 1px solid #000;
         padding: 10px;
@@ -152,10 +145,17 @@
 
 
     .nvmessage{
-        height: min-content;
+        height: auto;
+        font-size: 20px;
+        line-height: 2;             /* Interligne */
         background-color: #282828;
         user-select:text;
         pointer-events:all;
+        margin-bottom: 20px;
+    }
+    .batbotspec{
+
+        font-weight: bolder;
     }
 
     #input-container {
@@ -175,6 +175,7 @@
         border-radius: 4px;
         border: none;
         outline: 2px solid #4D2F2F;
+        font-size: 20px;
     }
 
     #send {
@@ -186,6 +187,8 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
         border-radius: 4px;
+        font-size: 20px;
+
     }
 
     #send:hover {

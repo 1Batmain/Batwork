@@ -34,7 +34,8 @@ function envoyerMessage() {
 
             const batbotResponseElement = document.createElement('div');       // Crée un nouvel élément div pour afficher la reponse de batbot
             batbotResponseElement.classList.add('nvmessage');                 // Ajoute la classe 'nvmessage' à l'élément créé
-            batbotResponseElement.textContent = "Batbot : " + data.message.text.value;                     // Ajoute le contenu de la réponse à l'élément
+            batbotResponseElement.classList.add('batbotspec');  
+            batbotResponseElement.textContent = data.message.text.value;                     // Ajoute le contenu de la réponse à l'élément
 
             chatbox.appendChild(batbotResponseElement);                        // Ajoute userMessageElement à chatbox
 
