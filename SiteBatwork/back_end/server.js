@@ -11,9 +11,6 @@ app.use(express.json());                                     //permet de parser 
 // Middleware qui permet toutes  les requêtes CORS
 app.use(cors({
     origin: '*' , //Remplacer par * pour autoriser toutes les origines
-    methods: ['GET', 'POST', 'OPTIONS'], //Méthodes HTTP autorisées
-    allowedHeaders: ['Content-Type', 'Authorization'], // En-têtes autorisés
-    credentials: false, // Autorise les cookies CORS
 }));
 
 // Démarer le serveur 
