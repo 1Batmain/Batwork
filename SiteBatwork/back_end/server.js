@@ -29,7 +29,7 @@ app.post('/nvmsg', async (req, res) => {
       console.log('Message reçu : ', userMessage);
 
       // ICI INTEGRATION DE LA LOGIQUE D'ENVOI DU MESSAGE A L'API ET ATTENDRE SA REPONSE
-      const openai = new OpenAI(({ apiKey: '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' })) ;
+      const openai = new OpenAI((process.env.OPENAI_API_KEY));
 
       async function main() {
 
