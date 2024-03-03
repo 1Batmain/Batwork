@@ -35,42 +35,14 @@
         background: #1E1E1E;
         color: #FFF;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-family: Kanit;
+        font-family: monospace;
         font-size: 32px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: lighter;
         line-height: normal; 
+        letter-spacing: 5px;
     }
 
-/* Style du Footer */
-
-#footer{
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-
-    background: #1E1E1E;
-    border-radius: 5px;
-    justify-content: space-evenly;
-
-}
-   
-    a{ 
-        background: #1E1E1E;
-
-        color: #969696;
-        font-family: Kanit;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal; 
-        display: flex;
-        align-items: center;
-
-    }
 
 
 /*Style de la page chat box*/
@@ -111,7 +83,20 @@
         margin-left: 2dvh;
         font-size: 16px;
         font-weight: 400;
-        line-height: 2;
+        line-height: 1.5;
+    }
+
+    .texte a{
+        color: #ffffff;
+        font-family: Kanit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration:underline;
+    }
+
+    #explication ul{
+        text-align: start;
     }
 
     /* Style du chatbot */
@@ -194,6 +179,37 @@
     #send:hover {
         background-color: #4D2F2F;
     }
+
+/* Style du Footer */
+
+#footer{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+
+    background: #1E1E1E;
+    border-radius: 5px;
+    justify-content: space-evenly;
+
+}
+   
+#footer a{ 
+        background: #1E1E1E;
+
+        color: #969696;
+        font-family: Kanit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        display: flex;
+        align-items: center;
+
+    }
+
 
 #docpage{
 display: grid;
